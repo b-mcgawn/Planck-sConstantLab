@@ -8,7 +8,7 @@ size = 1000
 
 
 #Import data
-data = pd.read_csv('~/Desktop/DataLab4/Sheet3.csv')
+data = pd.read_csv('./DataLab4/Sheet3.csv')
 
 V = data['V'][0:4]
 V = np.array(V)
@@ -91,3 +91,5 @@ plt.xlabel("Frequency (Hz)")
 plt.ylabel("Band Gap Energy (J)")
 plt.legend()
 
+print("Measured value of h: " + str(h_mean))
+print("std: " + str(h_std))
